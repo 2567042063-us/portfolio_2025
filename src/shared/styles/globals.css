@@ -1,8 +1,59 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary-light: #f57264;
+  --color-primary: #f57264;
+  --color-primary-dark: #ff9966;
+  --color-secondary: #042045;
+  --color-tertiary: #27b5cf;
+  --container-padding-DEFAULT: 1rem;
+  --container-padding-sm: 0;
+  --container-padding-lg: 0;
+  --container-padding-xl: 0;
+}
+
+@keyframes background {
+  0%, 100% {
+    background-position: left 0% bottom 0%;
+  }
+  50% {
+    background-position: left 200% bottom 0%;
+  }
+}
+
+@keyframes backgroundLinear {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes backgroundSlide {
+  0% {
+    background-position: 0 0%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@utility animate-background {
+  animation: background 2s ease-in-out infinite;
+}
+
+@utility animate-linear {
+  animation: backgroundLinear 3s linear infinite;
+}
+
+@utility animate-slide {
+  animation: backgroundSlide 120s linear infinite alternate-reverse forwards;
+}
+
 :root {
-  --color-primary: 245, 114, 100;
-  --color-secondary: 111 114 185;
+  /* --color-primary: 245, 114, 100; */
+  /* --color-secondary: 111 114 185; */
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -32,6 +83,3 @@ button:focus {
   flex-shrink: 0;
 }
 
-.lvtd-hidden {
-  display: none;
-}

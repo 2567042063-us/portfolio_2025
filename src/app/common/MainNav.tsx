@@ -10,7 +10,7 @@ import ThemeSwitch from "./ThemeSwitch";
 export default function MainNav() {
   const currentRoute = usePathname();
   return (
-    <div className="lvtd-hidden ml-auto lg:flex lg:items-center">
+    <div className="hidden ml-auto lg:flex lg:items-center">
       {MAIN_NAV.map((item) => (
         <Link
           key={item.id}

@@ -107,7 +107,7 @@ const ThemeSwitch = ({ isMobile }: Props) => {
   }
 
   return (
-    <div className="lvtd-hidden lg:mr-8 lg:flex">
+    <div className="hidden lg:mr-8 lg:flex">
       <Popover className="relative flex items-center">
         <>
           <PopoverButton className="outline-none">
