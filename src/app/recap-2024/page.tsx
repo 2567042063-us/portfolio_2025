@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 import Footer from "../common/Footer";
 import Header from "../common/Header";
-import { AUTOPARTS_PROJECT, EDUCHAIN_PROJECT, JOHNNY_PROJECT } from "./data";
+import { AUTOPARTS_PROJECT, JOHNNY_PROJECT } from "./data";
 import Keywords from "./Keywords";
 import Masonry from "./Masonry";
 import styles from "./recap04.module.css";
@@ -80,45 +80,6 @@ export default function Page() {
           </div>
           <div>
             <Masonry data={JOHNNY_PROJECT} />
-          </div>
-
-          {/* educhain apps  */}
-          <h3 className="mt-12 text-base tracking-wider text-slate-500">
-            <small className="flex flex-col md:flex-row">
-              <span>May 2024</span>
-              <span>{separator}my biggest project this year</span>
-              <span>{separator}［WIP］</span>
-            </small>
-          </h3>
-          <h2 className="mt-2 text-2xl font-thin leading-tight lg:mt-3">
-            Library for{" "}
-            <Link
-              href="https://educhain.vn/"
-              rel="nofollow noreferrer"
-              className="text-sky-700 hover:text-sky-600 dark:text-sky-400 dark:hover:text-sky-300"
-              target="_blank"
-            >
-              <span>EDUCHAIN</span>
-            </Link>
-          </h2>
-          <div className="mt-2 text-base font-light text-slate-700 dark:text-slate-300 lg:mt-2 lg:text-base">
-            <p>
-              I&apos;m working with my friend, a lecturer at NLU. We are a team
-              of 5 members, and we just focus on the Library part. All of us
-              hope this project should be make a good place for students and the
-              next generations to study.
-            </p>
-            <p>
-              I&apos;m in charge of managing tasks and front-end side. I also
-              support checking APIs for mobile apps...
-            </p>
-            <p>
-              Based on my experience that I made admin web by Next.js, Bootstrap
-              v5.0 and Redux.
-            </p>
-          </div>
-          <div>
-            <Masonry data={EDUCHAIN_PROJECT} />
           </div>
 
           {/* https://callparts.vn/  */}

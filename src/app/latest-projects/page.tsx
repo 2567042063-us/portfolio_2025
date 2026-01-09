@@ -15,18 +15,6 @@ const myProjects: IProjectItem[] = [
     urlBrowser: "https://callparts.vn/",
   },
   {
-    name: "Library for Educhain",
-    description: "a part of the Educhain platform",
-    responsible: `I'm working with my friend, a lecturer at NLU. We are a team of five members focusing on the Library module. All of us hope this project will become a great place for students and next generations to study.
-
-I’m in charge of task management and front-end development. I also support API testing for the mobile apps, and I developed the admin web portal using Next.js, Bootstrap 5.0, and Redux.`,
-    keywords: ["2024", "Next.js", "Bootstrap v5.0", "Redux", "Educhain"],
-    image: "educhain_j16kxc",
-    color: "#389e0d",
-    colorDark: "#4cff00",
-    urlBrowser: "https://callparts.vn/",
-  },
-  {
     name: "SaaS app supports fast-food chains",
     description:
       "helps fast-food chains manage their orders from the kitchen to customers.",
