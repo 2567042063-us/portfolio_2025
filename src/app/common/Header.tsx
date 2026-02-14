@@ -23,7 +23,7 @@ export default function Header({
           <div className="relative flex items-center py-5">
             <a className="flex-none font-semibold" href="/">
               <span className="mb-20 animate-linear bg-gradient-to-r from-primary via-tertiary to-primary bg-[length:200%_auto] bg-clip-text text-4xl font-bold text-transparent">
-                le vu trang dai
+                zhuangtai
               </span>
             </a>
             <MainNav />

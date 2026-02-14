@@ -1,6 +1,5 @@
 import Footer from "../common/Footer";
 import Header from "../common/Header";
-import SocialMediaContact from "../common/SocialMediaContact";
 import DownloadResume from "./DownloadResume";
 import Hobbies from "./Hobbies";
 import PersonalityTrait from "./PersonalityTrait";
@@ -17,14 +16,25 @@ export default function Page() {
       <div className="container flex-1">
         <div className="text-center">
           <h2 className="my-5 text-3xl font-extralight">
+            About Me
+          </h2>
+          <div className="mt-12 mb-12 mx-auto max-w-3xl font-light">
+            <p className="text-primary text-xl">I am upgrading myself ...</p>
+          </div>
+
+        </div>
+      </div>
+      <div className="container flex-1 mt-12">
+        <div className="text-center">
+          <h2 className="my-5 text-3xl font-extralight">
             About Me (Before 2025)
           </h2>
-          <div className="mx-auto max-w-[768px] font-light">
+          <div className="mx-auto max-w-3xl font-light">
             <p>
               Hi there! My name&apos;s <strong>Đài</strong>,
             </p>
             <p className="mt-1">
-              a front-end developer with 7+ years of hands-on experience with
+              a front-end developer with 10+ years of hands-on experience with
               modern techniques based on JavaScript.
             </p>
             <p className="mt-1">
@@ -44,7 +54,7 @@ export default function Page() {
 
         <div className="mt-10 text-center">
           <h2 className="my-5 text-3xl font-extralight">my skills</h2>
-          <div className="mx-auto max-w-[768px]">
+          <div className="mx-auto max-w-3xl">
             <Skills />
           </div>
         </div>
@@ -53,42 +63,27 @@ export default function Page() {
           <h2 className="my-5 text-3xl font-extralight">
             my personality traits
           </h2>
-          <div className="mx-auto max-w-[768px]">
+          <div className="mx-auto max-w-3xl">
             <PersonalityTrait />
           </div>
         </div>
 
-        <div className="mt-10 text-center">
+        {/* <div className="mt-10 text-center">
           <h2 className="my-5 text-3xl font-extralight">
             my recent achievements
           </h2>
-          <div className="mx-auto max-w-[768px]">
+          <div className="mx-auto max-w-3xl">
             <RecentAchievement />
           </div>
-        </div>
+        </div> */}
 
         <div className="mt-10 text-center">
           <h2 className="my-5 text-3xl font-extralight">my free time</h2>
-          <div className="mx-auto max-w-[768px] font-light">
+          <div className="mx-auto max-w-3xl font-light">
             <Hobbies />
           </div>
         </div>
-        <div className="mb-5 mt-10 text-center">
-          <h2 className="my-5 text-3xl font-extralight">let&apos;s connect</h2>
-          <div className="mx-auto max-w-[768px] font-light">
-            <p>
-              if you ever want to chat or have questions, feel free to reach out
-              me on social media
-            </p>
-            <SocialMediaContact className="mt-1" />
-            <p className="mt-1">
-              or you can send me an email:{" "}
-              <span className="text-sm font-semibold text-slate-700 dark:text-slate-200">
-                trangdai.levu@gmail.com
-              </span>
-            </p>
-          </div>
-        </div>
+
       </div>
 
       <Footer />

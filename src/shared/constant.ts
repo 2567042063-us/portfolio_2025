@@ -15,16 +15,6 @@ export const MAIN_NAV = [
     href: "/",
   },
   {
-    id: "projects",
-    label: "Projects",
-    href: "/latest-projects",
-  },
-  // {
-  //   id: "recap2024",
-  //   label: "Recap 2024",
-  //   href: "/recap-2024",
-  // },
-  {
     id: "about",
     label: "About",
     href: "/about",
