@@ -11,14 +11,15 @@ export default function Home() {
 
       <div className="container mb-2 flex flex-1 items-center justify-center sm:mb-10">
         <div className="flex flex-col sm:mt-10 sm:flex-row-reverse">
-          <div className="relative mx-auto flex h-[320px] w-[320px] justify-center overflow-hidden rounded-full shadow sm:h-[360px] sm:w-[360px]">
+          <div className="relative mx-auto flex h-80 w-80 justify-center overflow-hidden rounded-full shadow sm:h-[360px] sm:w-[360px]">
             <HeroBanner />
           </div>
+
           <div className="ml-auto max-w-[500px] flex-1 pr-0 text-center font-light sm:pr-5">
             <p className="mt-10 text-5xl font-extralight sm:mt-0">
               hi, I&apos;m Đài
             </p>
-
+{/*
             <div className="mt-5">
               <div className="mt-12 mb-12">
                 <iframe
@@ -57,7 +58,9 @@ export default function Home() {
                   </span>
                 </Link>
               </div>
+
             </div>
+             */}
           </div>
         </div>
       </div>

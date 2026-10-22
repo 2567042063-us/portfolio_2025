@@ -15,8 +15,13 @@ export const MAIN_NAV = [
     href: "/",
   },
   {
-    id: "about",
-    label: "About",
-    href: "/about",
+    id: "hk5",
+    label: "HK5",
+    href: "/hk5",
   },
+  // {
+  //   id: "about",
+  //   label: "About",
+  //   href: "/about",
+  // },
 ];
