@@ -1,8 +1,8 @@
 "use client";
 
+import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import clsx from "clsx";
 
 import { MAIN_NAV } from "@shared/constant";
 import ThemeSwitch from "./ThemeSwitch";
@@ -10,7 +10,7 @@ import ThemeSwitch from "./ThemeSwitch";
 export default function MainNav() {
   const currentRoute = usePathname();
   return (
-    <div className="hidden ml-auto lg:flex lg:items-center">
+    <div className="ml-auto hidden lg:flex lg:items-center">
       {MAIN_NAV.map((item) => (
         <Link
           key={item.id}
@@ -18,13 +18,13 @@ export default function MainNav() {
           className={clsx(
             "relative ml-8 border-b-[5px] text-lg font-light lowercase",
             currentRoute === item.href
-              ? "cursor-default border-primary text-primary hover:text-primary dark:border-primary-dark dark:text-primary-dark dark:hover:text-primary-dark"
+              ? "border-primary text-primary hover:text-primary dark:border-primary-dark dark:text-primary-dark dark:hover:text-primary-dark cursor-default"
               : "border-transparent hover:text-sky-500 dark:hover:text-sky-300",
           )}
         >
           {item.label}
           {currentRoute === item.href ? (
-            <hr className="absolute -bottom-1 -left-1/4 h-[1px] w-[150%] border-0 bg-gray-700 dark:bg-gray-300" />
+            <hr className="absolute -bottom-1 -left-1/4 h-px w-[150%] border-0 bg-gray-700 dark:bg-gray-300" />
           ) : (
             ""
           )}
