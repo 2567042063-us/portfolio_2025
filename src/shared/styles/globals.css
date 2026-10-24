@@ -83,3 +83,9 @@ button:focus {
   user-select: none;
   flex-shrink: 0;
 }
+
+.ztai__fkaiti {
+  font-family:
+    "KaiTi", "STKaiti", "Songti SC", "SimSun", "Noto Serif CJK SC",
+    "Noto Serif SC", serif;
+}

@@ -1,8 +1,3 @@
-export interface PageMeta {
-  title: string;
-  description?: string;
-}
-
 // Khai báo theo TÊN FILE (bao gồm cả đuôi .html)
 export const pagesMeta: Record<string, PageMeta> = {
   "giaide_khaungu_hk4.html": {
