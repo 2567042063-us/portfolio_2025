@@ -10,15 +10,14 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "le vu trang dai",
-  description:
-    "Hey there, I'm a front-end developer, using modern techniques based on JavaScript: React, Redux, Nextjs, TypeScript, Nextjs, and Tailwind CSS.",
-  keywords: [
-    "front-end developer",
-    "JavaScript",
-    "React",
-    "Redux",
-    "Nextjs, TypeScript, Tailwind CSS",
-  ],
+  description: "𓇢𓆸𓋼𖡼𖤣𖥧𖡼𓋼𖤣𖥧𓋼𓍊 studying chinese",
+  // keywords: [
+  //   "front-end developer",
+  //   "JavaScript",
+  //   "React",
+  //   "Redux",
+  //   "Nextjs, TypeScript, Tailwind CSS",
+  // ],
   metadataBase: new URL("https://levutrangdai.id.vn"),
   openGraph: {
     images:
