@@ -20,7 +20,7 @@ export default function GTHN() {
           <Link
             href={`/hk5/${file}`}
             prefetch={false}
-            className="hover:text-primary dark:hover:text-primary-dark mt-3 inline-block text-sky-700 dark:text-sky-400 px-5"
+            className="mt-3 inline-block px-5 text-sky-700 hover:text-primary dark:text-sky-400 dark:hover:text-primary-dark"
           >
             {/*  `/\.[^/.]+$//` sẽ tìm dấu chấm và phần chữ theo sau ở cuối file */}
             {file.replace(/\.[^/.]+$/, "")}{" "}

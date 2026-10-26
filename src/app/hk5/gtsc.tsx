@@ -18,10 +18,10 @@ export default function GTSC() {
   return (
     <div className="container flex-1">
       <div className="mx-auto text-center">
-        <h1 className="text-md leading-tight mb-2 border-t-2 border-b-2 border-sky-300 py-3 border-dashed text-sky-500 dark:text-primary-dark font-extralight">
+        <h1 className="text-md mb-2 border-b-2 border-t-2 border-dashed border-sky-300 py-3 font-extralight leading-tight text-sky-500 dark:text-primary-dark">
           Giải đề Giao tiếp SC
         </h1>
-        <p className="text-md text-gray-400 mb-2">to be continue...</p>
+        <p className="text-md mb-2 text-gray-400">to be continue...</p>
       </div>
 
       <div className="flex flex-col items-center justify-center gap-2">
@@ -34,7 +34,7 @@ export default function GTSC() {
             <Link
               key={filename}
               href={`/hk5/${routeSlug}`}
-              className="hover:text-fuchsia-500 dark:hover:text-primary-dark mt-3 inline-block text-sky-700 dark:text-sky-400 px-5 text-2xl ztai__fkaiti"
+              className="ztai__fkaiti mt-3 inline-block px-5 text-2xl text-sky-700 hover:text-amber-600 dark:text-sky-400 dark:hover:text-primary-dark"
             >
               {debai.title}
             </Link>

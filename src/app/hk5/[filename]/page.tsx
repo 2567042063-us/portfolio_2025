@@ -29,8 +29,8 @@ export default async function ViewHtmlPage({ params }: Props) {
 
       <div className="flex-1">
         <div className="mx-auto text-center">
-          <div className="container mx-auto flex justify-between">
-            <h1 className="text-4xl leading-tight mb-2 border-sky-300 py-3  text-rose-800 dark:text-primary-dark font-extralight ztai__fkaiti">
+          <div className="container mx-auto flex items-center justify-between">
+            <h1 className="ztai__fkaiti mb-2 border-sky-300 py-2 text-4xl font-extralight leading-tight text-rose-800 dark:text-primary-dark">
               {meta.title}
             </h1>
 
@@ -44,9 +44,9 @@ export default async function ViewHtmlPage({ params }: Props) {
         </div>
       </div>
       {/* --- IFRAME EMBED HOÀN TOÀN FILE HTML --- */}
-      <main className="container mx-auto flex-1 mt-2">
+      <main className="container mx-auto flex-1">
         <ReactIframe
-          actualHtmlFilename={actualHtmlFilename}
+          actualHtmlFilename={`/hk5/gtsc/${actualHtmlFilename}`}
           meta={meta}
           cssPath="/styles/iframe.css"
         />

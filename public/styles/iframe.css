@@ -1,51 +1,52 @@
+*,
+:after,
+:before,
+::backdrop {
+  box-sizing: border-box;
+  border: 0 solid;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, "Segoe UI", system-ui, -apple-system, "Noto Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
 .ztai__zh {
   font-family:
-    "KaiTi", "STKaiti", "Songti SC", "SimSun", "Noto Serif CJK SC",
-    "Noto Serif SC", serif;
+    "KaiTi", "STKaiti", "PingFang SC", "Songti SC", "SimSun", "Noto Serif CJK SC", "Noto Serif SC", serif;
   font-size: 1.5rem;
   line-height: 1.55;
 }
+
 .ztai__py {
-  color: #1f5c99;
+  font-family: "PingFang SC", STXihei, STSong, STCaiYun, "SimSun", "Noto Serif CJK SC", "Noto Serif SC", serif;
+  color: #64748b;
   line-height: 1.45;
-  font-family:
-     "SimSun", "Noto Serif CJK SC",
-    "Noto Serif SC", serif;
 }
+
 .ztai__table {
   width: 100%;
   border-collapse: collapse;
   margin: 10px 0 16px;
 }
-th,
-td {
+
+.ztai__table caption {
+  color: #99a1af;
+  margin-bottom: 12px;
+  font-size: 1.25em;
+}
+.ztai__table th,
+.ztai__table td {
   border: 1px solid #d9dde6;
   padding: 8px 10px;
   vertical-align: top;
   text-align: left;
 }
-th {
-  background: #e7eef9;
+
+.ztai__table th {
+  background: #f1f5f9;
+  color: #6b7280;
+  letter-spacing: 1.1px;
+  font-size: 0.75em;
 }
-td.num {
-  width: 54px;
-  text-align: center;
-  font-weight: 600;
-  color: var(--muted);
-}
-td.ans {
-  width: 120px;
-  font-weight: 700;
-  color: var(--ans);
-  font-size: 1.1rem;
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: var(--card);
-    margin: 10px 0 16px;
-    font-size: .96rem;
-}
-/* table.dlg td:first-child {
-  width: 110px;
-} */

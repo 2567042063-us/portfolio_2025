@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lịch ôn thi GK - CK</title>
+<style>
+:root{
+  --bg:#f6f4ef; --card:#eff8f9; --ink:#1f2933; --muted:#6b7280; --line:#155e75;
+  --accent:#b4432f; --accent-soft:#f8e5e0;
+  --c-sc3:#2f6f8f; --c-tc1:#7a4fa3; --c-dich:#b9770e; --c-gt:#2e7d4f; --c-kn:#c0392b;
+  --exam:#b4432f;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#16181b; --card:#1f2327; --ink:#e8e6e1; --muted:#9aa1a9; --line:#2d3238; --accent:#e07a63; --accent-soft:#3a2420;
+    --c-sc3:#6fb3d2; --c-tc1:#b793dc; --c-dich:#e0a64a; --c-gt:#6fc08f; --c-kn:#e8776a; --exam:#e07a63;}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--ink);font:16px/1.55 "Segoe UI",system-ui,-apple-system,"Noto Sans","PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:980px;margin:0 auto;}
+h1{font-size:1.6rem;margin:0 0 4px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 18px}
+.hero{display:grid;
+  grid-template-columns:1fr;
+  gap:12px;margin-bottom:18px}
+@media(min-width:720px){.hero{grid-template-columns:0.5fr 1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.next .big{font-size:2.4rem;font-weight:700;color:#be123c;line-height:2}
+.next .lbl{color:var(--muted);font-size:.9rem}
+.mini{display:flex;flex-direction:column;gap:6px;font-size:.92rem}
+.mini div{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed var(--line);padding-bottom:4px}
+.mini div:last-child{border:0}
+.mini b{white-space:nowrap}
+.tabs{display:flex;gap:6px;margin:10px 0 14px;flex-wrap:wrap}
+.tab{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 14px;border-radius:999px;cursor:pointer;font:inherit}
+.tab[aria-selected="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
+.panel[hidden]{display:none}
+.progress{height:8px;border-radius:99px;background:var(--line);overflow:hidden;margin:6px 0 16px}
+.progress i{display:block;height:100%;width:0;background:var(--c-gt);transition:width .3s}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;font-size:.85rem}
+.chip{display:inline-block;padding:2px 9px;border-radius:99px;font-size:.78rem;font-weight:600;color:#fff;white-space:nowrap}
+.sc3{background:var(--c-sc3)}.tc1{background:var(--c-tc1)}.dich{background:var(--c-dich)}.gt{background:var(--c-gt)}.kn{background:var(--c-kn)}
+@media (prefers-color-scheme: dark){.chip{color:#111}}
+.week{border-left:5px solid var(--line);margin-bottom:14px}
+.week.has-exam{border-left-color:var(--exam)}
+.week.now{box-shadow:0 0 0 2px var(--accent)}
+.week.khaungu{box-shadow:0 0 0 2px #0ea5e9; margin: 10px 0;}
+.wh{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 12px;margin-bottom:4px}
+.wh .n{font-weight:700;font-size:1.05rem}
+.wh .r{color:var(--muted);font-size:.9rem}
+.nowtag{background:var(--accent);color:#fff;font-size:.72rem;padding:1px 8px;border-radius:99px}
+.goal{margin:2px 0 10px;color:var(--muted);font-size:.92rem}
+.exams{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
+.exam{background:var(--accent-soft);border:1px solid var(--accent);border-radius:10px;padding:7px 10px;font-size:.92rem}
+.exam b{color:var(--accent)}
+ul.tasks{list-style:none;margin:0;padding:0}
+ul.tasks li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-top:1px solid var(--line)}
+ul.tasks li:first-child{border-top:0}
+ul.tasks input{margin-top:5px;width:18px;height:18px;flex:none;accent-color:var(--accent)}
+ul.tasks label{cursor:pointer;flex:1}
+ul.tasks li.done label span.t{text-decoration:line-through;color:var(--muted)}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}
+summary{cursor:pointer;padding:13px 16px;font-weight:700;list-style:none;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";margin-left:auto;color:var(--muted);font-weight:400;font-size:1.3rem}
+details[open] summary::after{content:"–"}
+.body{padding:2px 16px 16px}
+.body h4{margin:14px 0 6px;font-size:.98rem}
+.body ul{margin:4px 0 4px 20px;padding:0}
+.body li{margin:2px 0}
+table{width:100%;border-collapse:collapse;font-size:.9rem;margin:6px 0}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{background:var(--accent-soft)}
+.tblwrap{overflow-x:auto}
+.note{background:var(--accent-soft);border-radius:10px;padding:8px 12px;font-size:.9rem;margin:8px 0}
+.sched td:first-child,.sched th:first-child{white-space:nowrap}
+.today-row td{background:var(--accent-soft)}
+.pacetbl td:first-child{white-space:nowrap}
+.qtbl th:nth-child(1),.qtbl td:nth-child(1){width:34px;text-align:center}
+.qtbl td small{color:var(--muted);display:block;margin-top:3px}
+.qtbl{min-width:640px}
+.foot{color:var(--muted);font-size:.82rem;margin-top:20px}
+@media print{
+  body{background:#fff;color:#000}.tabs,.progress{display:none}.panel[hidden]{display:block}
+  details{border:1px solid #bbb} details>*{display:block}.card{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="display:flex;align-items:center;justify-content: space-between;">
+  <h1>Lịch ôn thi GK - CK</h1>
+  <a style="color: #0069a8;     font-weight: 400;" href="/hk5/01-lich-on-thi.html"
+  target="_blank"
+  rel="noopener noreferrer"
+  >chi tiết</a>
+  </div>
+  <p class="sub">Kế hoạch 13 tuần, tính ngược từ ngày thi (19/10/2026 đến 15/01/2027)</p>
+
+  <div class="hero">
+    <div class="card next">
+      <div class="lbl">Kỳ thi tiếp theo</div>
+      <div class="big" id="cdDays">–</div>
+      <div id="cdName" style="font-weight:600"></div>
+      <div class="lbl" id="cdDate"></div>
+    </div>
+    <div class="card mini" id="examList"></div>
+  </div>
+
+  <div class="card week khaungu">
+   <div class="wh"><span class="n" style="color: #0369a1;font-size: 1.75rem;">Soạn Khẩu Ngữ + Giao Tiếp SC</span><span class="r">4KN; 8GT; + (chưa có) CK KN</span></div>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var SUBJ = {
+    sc3:{n:"NP-Dịch SC3",c:"sc3"}, tc1:{n:"Ngữ pháp TC1",c:"tc1"}, dich:{n:"Dịch TC1",c:"dich"},
+    gt:{n:"Giao tiếp",c:"gt"}, kn:{n:"Khẩu ngữ",c:"kn"}
+  };
+  var EXAMS = [
+    {d:"2026-11-11", t:"GK · Ngữ pháp - Dịch SC3", s:"sc3"},
+    {d:"2026-12-03", t:"GK · Ngữ pháp TC1", s:"tc1"},
+    {d:"2026-12-11", t:"GK · Dịch TC1", s:"dich"},
+    {d:"2026-12-26", t:"GK · Khẩu ngữ SC2", s:"kn"},
+    {d:"2027-01-11", t:"CK · Ngữ pháp - Dịch SC3 (ca 1)", s:"sc3"},
+    {d:"2027-01-12", t:"CK · Ngữ pháp TC1 (ca 1) + Dịch TC1 (ca 2)", s:"tc1"},
+    {d:"2027-01-14", t:"CK · Giao tiếp sơ cấp", s:"gt"},
+    {d:"2027-01-15", t:"CK · Khẩu ngữ SC2", s:"kn"}
+  ];
+
+  function pd(s){var p=s.split("-");return new Date(+p[0],+p[1]-1,+p[2]);}
+  function fmt(d){return ("0"+d.getDate()).slice(-2)+"/"+("0"+(d.getMonth()+1)).slice(-2);}
+  var DOW=["Chủ Nhật","Thứ Hai","Thứ Ba","Thứ Tư","Thứ Năm","Thứ Sáu","Thứ Bảy"];
+  var today=new Date(); today.setHours(0,0,0,0);
+  function days(d){return Math.round((d-today)/86400000);}
+
+  /* countdown */
+  var next=null;
+  for(var i=0;i<EXAMS.length;i++){ if(pd(EXAMS[i].d)>=today){next=EXAMS[i];break;} }
+  var cdDays=document.getElementById("cdDays");
+  if(next){
+    var n=days(pd(next.d));
+    cdDays.textContent = n===0 ? "Hôm nay" : n+" ngày";
+    document.getElementById("cdName").textContent=next.t;
+    var nd=pd(next.d);
+    document.getElementById("cdDate").textContent=DOW[nd.getDay()]+", "+fmt(nd)+"/"+nd.getFullYear();
+  } else {
+    cdDays.textContent="Xong"; document.getElementById("cdName").textContent="Đã qua tất cả kỳ thi";
+  }
+  var el=document.getElementById("examList");
+  // Kiểm tra nếu phần tử tồn tại VÀ có thẻ con bên trong
+  if (el && el.children.length > 0) {
+      return; // Dừng hàm / Không thực thi tiếp
+  }
+  EXAMS.forEach(function(e){
+    var d=pd(e.d), n=days(d);
+    var div=document.createElement("div");
+    var a=document.createElement("span"); a.textContent=DOW[d.getDay()].replace("Thứ ","T")+" "+fmt(d)+" · "+e.t;
+    var b=document.createElement("b"); b.textContent = n<0 ? "đã qua" : (n===0?"hôm nay":n+" ngày");
+    div.appendChild(a); div.appendChild(b); el.appendChild(div);
+  });
+
+  /* storage */
+  var store={};
+  try{ store=JSON.parse(localStorage.getItem("ontap_gkck")||"{}"); }catch(e){ store={}; }
+  function save(){ try{ localStorage.setItem("ontap_gkck",JSON.stringify(store)); }catch(e){} }
+
+})();
+</script>
+</body>
+</html>

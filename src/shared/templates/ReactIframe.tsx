@@ -1,11 +1,14 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import clsx from "clsx";
 import Frame from "react-frame-component";
 
 const CustomIframe: React.FC<CustomIframeProps> = ({
   actualHtmlFilename,
   meta,
+  className,
+  head,
   cssPath = "/styles/iframe.css", // Thay đường dẫn CSS của bạn ở đây
 }) => {
   const [htmlContent, setHtmlContent] = useState<string>("");
@@ -16,7 +19,7 @@ const CustomIframe: React.FC<CustomIframeProps> = ({
 
     setLoading(true);
     // Fetch file HTML tĩnh từ thư mục public
-    fetch(`/hk5/gtsc/${actualHtmlFilename}`)
+    fetch(actualHtmlFilename)
       .then((res) => {
         if (!res.ok) throw new Error("Failed to load HTML file");
         return res.text();
@@ -52,7 +55,12 @@ const CustomIframe: React.FC<CustomIframeProps> = ({
 
   if (loading) {
     return (
-      <div className="w-full h-[calc(100vh-110px)] flex items-center justify-center">
+      <div
+        className={clsx(
+          "flex h-[calc(100vh-110px)] w-full items-center justify-center",
+          className,
+        )}
+      >
         Đang tải...
       </div>
     );
@@ -62,7 +70,11 @@ const CustomIframe: React.FC<CustomIframeProps> = ({
     <Frame
       title={meta.title}
       initialContent={initialContent}
-      className="w-full h-[calc(100vh-110px)] border-none block"
+      className={clsx(
+        "block h-[calc(100vh-110px)] w-full border-none",
+        className,
+      )}
+      head={head}
       mountTarget="#mount-node"
     >
       {/* Inject trực tiếp nội dung HTML đã fetch vào trong iframe */}
