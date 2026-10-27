@@ -9,4 +9,7 @@ export const listGTSC: Record<string, PageMeta> = {
   "sheng-huo-zhong-shen-me-zui-zhong-yao.html": {
     title: "5.1.ᐟ 你们觉得生活中什么最重要？",
   },
+  "xingfu.html": {
+    title: "5.2.ᐟ 你觉得什么是幸福？",
+  },
 };
