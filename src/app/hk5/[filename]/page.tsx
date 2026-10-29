@@ -1,6 +1,6 @@
+import dynamic from "next/dynamic";
 import Link from "next/link";
-
-import ReactIframe from "@shared/templates/ReactIframe";
+import { notFound } from "next/navigation";
 
 import Footer from "../../common/Footer";
 import Header from "../../common/Header";
@@ -10,21 +10,24 @@ interface Props {
   params: Promise<{ filename: string }>;
 }
 
-export default async function ViewHtmlPage({ params }: Props) {
+export default async function ViewPage({ params }: Props) {
   const { filename } = await params;
-  const actualHtmlFilename = filename.endsWith(".html")
-    ? filename
-    : `${filename}.html`;
-  const meta = listGTSC[actualHtmlFilename] || {
-    title: actualHtmlFilename,
-    description: "",
-  };
+  const meta = listGTSC[filename];
+
+  let DynamicContent: React.ComponentType | null = null;
+  try {
+    DynamicContent = dynamic(() => import(`../content-gtsc/${filename}`), {
+      loading: () => <p className="py-8 text-center">Đang tải nội dung...</p>,
+    });
+  } catch {
+    notFound();
+  }
 
   return (
     <div className="flex min-h-screen flex-col dark:bg-slate-800">
       <Header
-        title="le vu trang dai | about "
-        canonical="https://levutrangdai.id.vn/about"
+        title={meta.title}
+        canonical={`https://levutrangdai.id.vn/hk5/${filename}`}
       />
 
       <div className="flex-1">
@@ -43,19 +46,10 @@ export default async function ViewHtmlPage({ params }: Props) {
           </div>
         </div>
       </div>
-      {/* --- IFRAME EMBED HOÀN TOÀN FILE HTML --- */}
+
       <main className="container mx-auto flex-1">
-        <ReactIframe
-          actualHtmlFilename={`/hk5/gtsc/${actualHtmlFilename}`}
-          meta={meta}
-          cssPath="/styles/iframe.css"
-        />
-        {/* --- CÁCH 2: EMBED FILE HTML BẰNG IFRAME THÔNG THƯỜNG --- */}
-        {/* <iframe
-          src={`/hk5/gtsc/${actualHtmlFilename}`}
-          title={meta.title}
-          className="w-full h-[calc(100vh-110px)] border-none block"
-        /> */}
+        {/* Render trực tiếp React Component thay vì Iframe */}
+        <DynamicContent />
       </main>
 
       <Footer />

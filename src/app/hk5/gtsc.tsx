@@ -9,12 +9,10 @@ export default function GTSC() {
         <h1 className="text-md mb-2 border-b-2 border-t-2 border-dashed border-sky-300 py-3 font-extralight leading-tight text-sky-500 dark:text-primary-dark">
           Giải đề Giao tiếp SC
         </h1>
-        <p className="text-md mb-2 text-gray-400">to be continue...</p>
       </div>
 
       <div className="flex flex-col justify-center gap-2">
         {Object.keys(listGTSC).map((filename) => {
-          console.log(filename);
           const routeSlug = filename.replace(/\.html$/, "");
           return (
             <Link

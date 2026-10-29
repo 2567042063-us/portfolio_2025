@@ -16,7 +16,7 @@ export default function Page() {
           <h2 className="my-1 text-3xl font-extralight">Học Kỳ 5</h2>
         </div>
 
-        <nav className="sticky top-0 z-10 my-3 flex flex-wrap justify-center gap-2 bg-white py-2 text-lg font-light">
+        <nav className="z-2 sticky top-0 my-3 flex flex-wrap justify-center gap-2 bg-white py-2 text-lg font-light dark:bg-slate-800">
           {["GTHN", "Giao tiếp SC", "Khẩu ngữ", "Đọc hiểu SC"].map(
             (subject, index) => (
               <a

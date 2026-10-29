@@ -1,0 +1,227 @@
+export default function Kuaican() {
+  return (
+    <table className="ztai__table">
+      <caption>
+        话题：有的人认为吃快餐既省时间又方便，也有的人认为吃快餐不但没营养也不好吃，你的看法呢？
+        <br />
+        <small>
+          Có người cho rằng ăn đồ ăn nhanh vừa tiết kiệm thời gian vừa tiện lợi,
+          người khác lại nghĩ rằng đồ ăn nhanh ko nhưng ko dinh dưỡng mà còn
+          không ngon.
+          <br />
+          Quan điểm của bạn thế nào?
+        </small>
+      </caption>
+      <thead>
+        <tr>
+          <th>Role</th>
+          <th style={{ width: "40%" }}>汉语</th>
+          <th>Pinyin</th>
+          <th>Tiếng Việt</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>明英</td>
+          <td className="ztai__zh">
+            庄姐，十二点了，我们一起去吃炸鸡吧！附近新开了一家快餐店，听说他们家的蒜香黄油炸鸡特别好吃。
+          </td>
+          <td className="ztai__py">
+            Zhuāng jiě, shí'èr diǎn le, wǒmen yìqǐ qù chī zhájī ba! Fùjìn xīn
+            kāi le yì jiā kuàicāndiàn, tīngshuō tāmen jiā de suànxiāng huángyóu
+            zhájī tèbié hǎochī.
+          </td>
+          <td>
+            Chị Trang ơi, 12h rồi, chúng ta cùng đi ăn gà rán đi! Gần đây mới mở
+            một cửa hàng fastfood, nghe nói món gà rán sốt bơ tỏi của quán đặc
+            biệt ngon!
+          </td>
+        </tr>
+        <tr>
+          <td>小庄</td>
+          <td className="ztai__zh">
+            哎哟，又吃快餐啊？你最近怎么老是吃快餐？我觉得快餐没什么营养，味道也很一般。
+          </td>
+          <td className="ztai__py">
+            Āiyō, yòu chī kuàicān a? Nǐ zuìjìn zěnme lǎoshi chī kuàicān? Wǒ
+            juéde kuàicān méi shénme yíngyǎng, wèidào yě hěn yìbān.
+          </td>
+          <td>
+            Ui, lại ăn fastfood nữa à? Sao dạo này em hay ăn fastfood vậy? Chị
+            thấy fastfood chẳng có dinh dưỡng mà vị cũng bình thường.
+          </td>
+        </tr>
+        <tr>
+          <td>明英</td>
+          <td className="ztai__zh">
+            可是，吃快餐既省时间又方便啊！每天工作那么忙，中午休息时间只有一小时。去快餐店点完餐，两分钟就能拿到，吃完以后，还可以休息一会儿。现在的快餐店选择很多，有汉堡包、披萨、意大利面和沙拉，也有不少健康的选择，挺好吃的。
+          </td>
+          <td className="ztai__py">
+            Kěshì, chī kuàicān jì shěng shíjiān yòu fāngbiàn a! Měitiān gōngzuò
+            nàme máng, zhōngwǔ xiūxi shíjiān zhǐyǒu yī xiǎoshí. Qù kuàicāndiàn
+            diǎn wán cān, liǎng fēnzhōng jiù néng ná dào, chī wán yǐhòu, hái
+            kěyǐ xiūxi yíhuir. Xiànzài de kuàicāndiàn xuǎnzé hěnduō, yǒu
+            hànbǎobāo, pīsà, Yìdàlì miàn hé shālā, yě yǒu bù shǎo jiànkāng de,
+            tǐng hǎochī de.
+          </td>
+          <td>
+            Nhưng mà, ăn đồ ăn nhanh vừa tiết kiệm thời gian lại vừa tiện lợi
+            nữa! Mỗi ngày công việc bận rộn như vậy, thời gian nghỉ trưa chỉ có
+            một tiếng. Đến quán ăn nhanh gọi món xong, hai phút là lấy được đồ
+            ăn rồi, ăn xong còn có thể nghỉ ngơi một chút. Các quán ăn nhanh bây
+            giờ có rất nhiều lựa chọn, có bánh hamburger, pizza, mì Ý và salad,
+            cũng có không ít món lành mạnh, ăn khá là ngon.
+          </td>
+        </tr>
+        <tr>
+          <td>小庄</td>
+          <td className="ztai__zh">真的吗？我还没找到合我口味的店呢。</td>
+          <td className="ztai__py">
+            Zhēn de ma? Wǒ hái méi zhǎodào hé wǒ kǒuwèi de diàn ne.
+          </td>
+          <td>Vậy à, chị chưa thấy quán nào hợp gu chị cả.</td>
+        </tr>
+        <tr>
+          <td>明英</td>
+          <td className="ztai__zh">那姐跟我一起去试试这家店吧！</td>
+          <td className="ztai__py">
+            Nà jiě gēn wǒ yìqǐ qù shìshi zhè jiā diàn ba!
+          </td>
+          <td>Vậy chị đi thử quán này với em đi!</td>
+        </tr>
+        <tr>
+          <td>小庄</td>
+          <td className="ztai__zh">
+            炸鸡用的都是冷冻鸡肉，有什么好吃的啊？不光是冷冻鸡肉，牛肉也是冷冻的，薯条也是冷冻切好的……全都是冷冻食品！
+          </td>
+          <td className="ztai__py">
+            Zhájī yòng de dōu shì lěngdòng jīròu, yǒu shénme hǎochī de a?
+            Bùguāng shì lěngdòng jīròu, niúròu yě shì lěngdòng de, shǔtiáo yě
+            shì lěngdòng qiē hǎo de…… quán dōu shì lěngdòng shípǐn!
+          </td>
+          <td>
+            Gà rán toàn dùng thịt gà đông lạnh, có gì ngon đâu? Ko chỉ gà đông
+            lạnh, thịt bò cũng đông lạnh, khoai tây cắt đông lạnh... toàn đồ
+            đông lạnh thôi.
+          </td>
+        </tr>
+        <tr>
+          <td>明英</td>
+          <td className="ztai__zh">
+            嗯，每家店的食材保存方法不一样吧！听说这家店的炸鸡做得很好，应该不会有冷冻的味道。而且，每个人的口味不一样嘛！
+          </td>
+          <td className="ztai__py">
+            Èn, měi jiā diàn de shícái bǎocún fāngfǎ bù yīyàng ba! Tīngshuō zhè
+            jiā diàn de zhájī zuò de hěn hǎo, yīnggāi bú huì yǒu lěngdòng de
+            wèidào. Érqiě, měi gè rén de kǒuwèi bù yīyàng ma!
+          </td>
+          <td>
+            Ừm, cách bảo quản nguyên liệu của mỗi quán khác nhau mà! Nghe nói gà
+            rán của quán này làm ngon lắm, chắc là không có mùi thịt đông lạnh
+            đâu. Với lại, khẩu vị của mỗi người mỗi khác mà!
+          </td>
+        </tr>
+        <tr>
+          <td>小庄</td>
+          <td className="ztai__zh">
+            可是，我觉得快餐不太健康，快餐大多数都是高油高盐，吃多了对身体不好，也容易让人发胖。
+          </td>
+          <td className="ztai__py">
+            Kěshì, wǒ juéde kuàicān bú tài jiànkāng, kuàicān dàduōshù dōu shì
+            gāo yóu gāo yán, chī duō le duì shēntǐ bù hǎo, yě róngyì ràng rén
+            fāpàng.
+          </td>
+          <td>
+            Nhưng chị thấy fastfood không được lành mạnh lắm, đa phần đều nhiều
+            dầu nhiều muối, ăn nhiều không tốt cho sức khỏe, lại dễ mập.
+          </td>
+        </tr>
+        <tr>
+          <td>明英</td>
+          <td className="ztai__zh">
+            偶尔去吃点自己喜欢的，也是一种享受生活啊！
+          </td>
+          <td className="ztai__py">
+            Ǒu'ěr qù chī diǎn zìjǐ xǐhuan de, yě shì yì zhǒng xiǎngshòu shēnghuó
+            a!
+          </td>
+          <td>
+            Thỉnh thoảng đi ăn món mình thích cũng là một cách tận hưởng cuộc
+            sống mà!
+          </td>
+        </tr>
+        <tr>
+          <td>小庄</td>
+          <td className="ztai__zh">你经常吃这几样，不腻吗？</td>
+          <td className="ztai__py">Nǐ jīngcháng chī zhè jǐ yàng, bú nì ma?</td>
+          <td>Em hay ăn mấy món này, không ngán à?</td>
+        </tr>
+        <tr>
+          <td>明英</td>
+          <td className="ztai__zh">
+            哈哈，喜欢吃的东西，怎么会吃腻呢！不过，姐姐说得也有道理。以后我会少吃一点快餐，也试着多吃一些清淡、少油的食物，这样对身体更好。
+          </td>
+          <td className="ztai__py">
+            Hāha, xǐhuan chī de dōngxi, zěnme huì chī nì ne! Búguò, jiějie shuō
+            de yě yǒu dàolǐ. Yǐhòu wǒ huì shǎo chī yìdiǎn kuàicān, yě shìzhe duō
+            chī yìxiē qīngdàn, shǎo yóu de shíwù, zhèyàng duì shēntǐ gèng hǎo.
+          </td>
+          <td>
+            Haha, món mình thích ăn thì sao mà ngán được chứ! Nhưng chị nói cũng
+            có lý. Sau này em sẽ ăn ít thức ăn nhanh hơn, đồng thời thử ăn nhiều
+            món thanh đạm, ít dầu mỡ hơn, như vậy sẽ tốt cho sức khỏe hơn.
+          </td>
+        </tr>
+        <tr>
+          <td>小庄</td>
+          <td className="ztai__zh">
+            总之，生活节奏这么快，吃快餐确实挺方便的。不过我们也要注意吃得健康点儿，把身体照顾好……可以自己在家做好饭带着，或者去家常菜馆吃，菜多，营养也全。
+          </td>
+          <td className="ztai__py">
+            Zǒngzhī, shēnghuó jiézòu zhème kuài, chī kuàicān quèshí tǐng
+            fāngbiàn de. Búguò wǒmen yě yào zhùyì chī de jiànkāng diǎnr, bǎ
+            shēntǐ zhàogù hǎo…… Kěyǐ zìjǐ zài jiā zuò hǎo fàn dàizhe, huòzhě qù
+            jiācháng càiguǎn chī, cài duō, yíngyǎng yě quán.
+          </td>
+          <td>
+            Nói chung là, với nhịp sống hối hả, ăn đồ fastfood rất tiện lợi.
+            Nhưng chúng ta cũng cần chú ý ăn uống lành mạnh, chăm sóc tốt cho
+            sức khỏe… Có thể nấu cơm ở nhà mang theo hay đến quán cơm gia đình
+            có đầy đủ món, đầy đủ dinh dưỡng
+          </td>
+        </tr>
+        <tr>
+          <td>明英</td>
+          <td className="ztai__zh">
+            好的，姐，听你的，明天我再考虑考虑。那今天中午呢？
+          </td>
+          <td className="ztai__py">
+            Hǎo de, jiě, tīng nǐ de, míngtiān wǒ zài kǎolǜ kǎolǜ. Nà jīntiān
+            zhōngwǔ ne?
+          </td>
+          <td>dạ, em nghe lời chị, để mai em suy nghĩ... Trưa nay thì sao?</td>
+        </tr>
+        <tr>
+          <td>小庄</td>
+          <td className="ztai__zh">
+            今天嘛……要不就去打卡那家新开的店吧，我也想尝一尝你说的这几道菜。
+          </td>
+          <td className="ztai__py">
+            Jīntiān ma…… yàobù jiù qù dǎkǎ nà jiā xīn kāi de diàn ba, wǒ yě
+            xiǎng cháng yi cháng nǐ shuō de zhè jǐ dào cài.
+          </td>
+          <td>
+            Hôm nay thì…… hay là đi check-in quán mới mở đó đi, chị cũng muốn
+            thử mấy món em nói.
+          </td>
+        </tr>
+        <tr>
+          <td>明英</td>
+          <td className="ztai__zh">好嘞，走起吧！</td>
+          <td className="ztai__py">Hǎo lei, zǒu qǐ ba!</td>
+          <td>Được, mình đi thôi.</td>
+        </tr>
+      </tbody>
+    </table>
+  );
+}

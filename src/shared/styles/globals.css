@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Khai báo variant dark sẽ kích hoạt khi có class .dark ở phần tử cha hoặc <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-primary-light: #f57264;
   --color-primary: #f57264;
@@ -89,3 +92,62 @@ button:focus {
     "KaiTi", "STKaiti", "Songti SC", "SimSun", "Noto Serif CJK SC",
     "Noto Serif SC", serif;
 }
+
+.ztai__zh {
+  font-family:
+    "KaiTi", "STKaiti", "PingFang SC", "Songti SC", "SimSun",
+    "Noto Serif CJK SC", "Noto Serif SC", serif;
+  font-size: 1.5rem;
+  line-height: 1.55;
+}
+
+.ztai__py {
+  font-family:
+    "Segoe UI", Roboto, Arial, "Noto Sans", "PingFang SC", "Microsoft YaHei",
+    sans-serif;
+  color: #64748b;
+  line-height: 1.45;
+  font-weight: 300;
+}
+
+.dark .ztai__py {
+  color: #93c5fd;
+}
+
+.ztai__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0 16px;
+  font-size: 14px;
+}
+
+.ztai__table caption {
+  color: #99a1af;
+  margin-bottom: 12px;
+  font-size: 1.25em;
+}
+.ztai__table th,
+.ztai__table td {
+  border: 1px solid #d9dde6;
+  padding: 8px 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.ztai__table th {
+  background: #f1f5f9;
+  color: #6b7280;
+  letter-spacing: 1.1px;
+  font-size: 0.75em;
+}
+
+.dark .ztai__table th {
+  background: inherit;
+  color: #94a3b8;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  .ztai__py {
+    color: #cbd5e1;
+  }
+} */
