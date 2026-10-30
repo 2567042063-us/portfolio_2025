@@ -103,11 +103,10 @@ button:focus {
 
 .ztai__py {
   font-family:
-    "Segoe UI", Roboto, Arial, "Noto Sans", "PingFang SC", "Microsoft YaHei",
-    sans-serif;
+    Inter, "Segoe UI", Roboto, Arial, "Noto Sans", "PingFang SC",
+    "Microsoft YaHei", sans-serif;
   color: #64748b;
   line-height: 1.45;
-  font-weight: 300;
 }
 
 .dark .ztai__py {

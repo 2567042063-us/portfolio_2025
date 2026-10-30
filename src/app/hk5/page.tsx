@@ -7,10 +7,7 @@ import LichThi from "./lichthi";
 export default function Page() {
   return (
     <div className="flex min-h-screen flex-col items-center dark:bg-slate-800">
-      <Header
-        title="le vu trang dai | about "
-        canonical="https://levutrangdai.id.vn/about"
-      />
+      <Header title="hk5" canonical="https://levutrangdai.id.vn/hk5" />
       <div className="container flex-1">
         <div className="text-center">
           <h2 className="my-1 text-3xl font-extralight">Học Kỳ 5</h2>

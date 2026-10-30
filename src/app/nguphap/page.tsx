@@ -20,15 +20,15 @@ export default function HK5IndexPage() {
   return (
     <div className="flex min-h-screen flex-col items-center dark:bg-slate-800">
       <Header
-        title="le vu trang dai | about "
+        title="le vu trang dai "
         canonical="https://levutrangdai.id.vn/about"
       />
       <div className="container flex-1">
         <div className="mx-auto text-center">
-          <h1 className="text-2xl leading-tight mb-2 border-b-3 border-sky-300 py-3 border-dashed text-sky-500 dark:text-primary-dark font-extralight">
+          <h1 className="border-b-3 mb-2 border-dashed border-sky-300 py-3 text-2xl font-extralight leading-tight text-sky-500 dark:text-primary-dark">
             Ngữ Pháp Tiếng Trung
           </h1>
-          <p className="text-md text-gray-400 mb-8">continue...</p>
+          <p className="text-md mb-8 text-gray-400">continue...</p>
         </div>
 
         <div

@@ -1,6 +1,7 @@
 interface PageMeta {
   title: string;
   description?: string;
+  titleseo?: string;
 }
 
 interface CustomIframeProps {

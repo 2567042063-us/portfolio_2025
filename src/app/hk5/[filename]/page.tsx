@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -8,6 +9,20 @@ import { listGTSC } from "../config";
 
 interface Props {
   params: Promise<{ filename: string }>;
+}
+
+// Hàm này giúp Next.js tự đổi Title & Canonical URL cho từng trang
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { filename } = await params;
+  const slug = filename.replace(/\.(html|tsx)$/, "");
+  const meta = listGTSC[slug] || { title: slug };
+
+  return {
+    title: `${meta.titleseo} | lvtd`,
+    alternates: {
+      canonical: `https://levutrangdai.id.vn/hk5/${slug}`,
+    },
+  };
 }
 
 export default async function ViewPage({ params }: Props) {
@@ -26,7 +41,7 @@ export default async function ViewPage({ params }: Props) {
   return (
     <div className="flex min-h-screen flex-col dark:bg-slate-800">
       <Header
-        title={meta.title}
+        title={filename}
         canonical={`https://levutrangdai.id.vn/hk5/${filename}`}
       />
 
