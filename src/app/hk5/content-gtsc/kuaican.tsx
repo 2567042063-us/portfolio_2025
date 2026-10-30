@@ -41,11 +41,11 @@ export default function Kuaican() {
         <tr>
           <td>小庄</td>
           <td className="ztai__zh">
-            哎哟，又吃快餐啊？你最近怎么老是吃快餐？我觉得快餐
+            哎哟，你又吃快餐啊？你最近怎么老是吃快餐？我觉得快餐
             <span className="text-cyan-700">没什么营养，味道也很一般</span>。
           </td>
           <td className="ztai__py">
-            Āiyō, yòu chī kuàicān a? Nǐ zuìjìn zěnme lǎoshì chī kuàicān? Wǒ
+            Āiyō, Nǐ yòu chī kuàicān a? Nǐ zuìjìn zěnme lǎoshì chī kuàicān? Wǒ
             juéde kuàicān{" "}
             <span className="text-cyan-700">
               méi shénme yíngyǎng, wèidào yě hěn yìbān
@@ -143,13 +143,13 @@ export default function Kuaican() {
         <tr>
           <td>小庄</td>
           <td className="ztai__zh">
-            不过我觉得快餐还是不太健康，一般都
+            不过我认为快餐还是不太健康，一般都
             <span className="text-cyan-700">高油高盐</span>
             ，吃多了很容易让人发胖。
           </td>
           <td className="ztai__py">
-            Búguò wǒ juéde kuàicān háishi bú tài jiànkāng, yìbān dōu gāo yóu gāo
-            yán, chī duō le hěn róngyì ràng rén fāpàng.
+            Búguò wǒ rènwéi kuàicān háishi bú tài jiànkāng, yìbān dōu gāo yóu
+            gāo yán, chī duō le hěn róngyì ràng rén fāpàng.
           </td>
           <td>
             Nhưng chị thấy fastfood không được lành mạnh lắm, đa phần đều nhiều
@@ -178,19 +178,22 @@ export default function Kuaican() {
           <td className="ztai__zh">
             你觉得好吃啊？现代生活节奏快，快餐确实方便，但我们还是要
             <span className="text-cyan-700">多注意饮食健康</span>
-            ，好好照顾身体……我喜欢自己在家做好饭带着，或者去家常菜馆吃，菜多，营养也全。
+            ，好好照顾身体……
+            <br />
+            我喜欢自己在家做好饭带着。这样菜品丰富，营养也比较全面。
           </td>
           <td className="ztai__py">
             Nǐ juéde hǎochī a? Xiàndài shēnghuó jiézòu kuài, kuàicān quèshí
             fāngbiàn, dàn wǒmen háishi yào duō zhùyì yǐnshí jiànkāng, hǎohāo
-            zhàogù shēntǐ…… Wǒ xǐhuan zìjǐ zài jiā zuò hǎo fàn dàizhe, huòzhě qù
-            jiācháng cài guǎn chī, cài duō, yíngyǎng yě quán.
+            zhàogù shēntǐ…… <br />
+            Wǒ xǐhuan zìjǐ zài jiā zuò hǎo fàn dàizhe, zhèyàng càipǐn fēngfù,
+            yíngyǎng yě bǐjiào quánmiàn.
           </td>
           <td>
             Em thấy nó ngon à, với lại cuộc sống hiện đại hối hả thì nó khá tiện
             lợi, nhưng chúng ta cũng cần chú ý ăn uống lành mạnh, chăm sóc tốt
-            cho sức khỏe… Chị thích nấu cơm ở nhà mang theo hay đến quán cơm gia
-            đình có đầy đủ món, đầy đủ dinh dưỡng.
+            cho sức khỏe… Chị thích nấu cơm ở nhà mang theo, như vậy đầy đủ món,
+            đầy đủ dinh dưỡng.
           </td>
         </tr>
         <tr>
