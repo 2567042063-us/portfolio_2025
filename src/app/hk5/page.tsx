@@ -2,7 +2,6 @@ import Footer from "../common/Footer";
 import Header from "../common/Header";
 import GTHN from "./gthn";
 import GTSC from "./gtsc";
-import LichThi from "./lichthi";
 
 export default function Page() {
   return (
@@ -28,14 +27,7 @@ export default function Page() {
         </nav>
 
         <div id="m1" className="my-5">
-          <GTHN />
-        </div>
-        <div>
-          <LichThi />
-        </div>
-
-        <div id="m2" className="my-5">
-          <GTSC />
+          to be continue...
         </div>
       </div>
       <Footer />
